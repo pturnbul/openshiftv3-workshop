@@ -114,7 +114,7 @@ following environment variables:
 
 image:images/dbtest_deployment_env.png[image]
 
-In the next section add a label:
+In the label section at the bottom, review the labels and ensure the following label is being added:
 
 ....
 * app=pricelist
