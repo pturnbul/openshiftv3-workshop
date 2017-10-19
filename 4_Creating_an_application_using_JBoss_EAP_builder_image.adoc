@@ -322,7 +322,7 @@ Now access the application by using the route you got in the previous
 step. You can use either curl or your browser.
 
 ....
-$ curl ks-myjbossapp-UserName.apps.osecloud.com
+$ curl ks-myjbossapp-UserName.<<DOMAIN_SUFFIX>>>
 
  <!-- Plain HTML page that kicks us into the app -->
 <html>
@@ -332,7 +332,7 @@ $ curl ks-myjbossapp-UserName.apps.osecloud.com
 </html>
 ....
 
-Go to https://ks-myjbossapp-Username.apps.osecloud.com via your browser.
+Go to https://ks-myjbossapp-Username.<<DOMAIN_SUFFIX>>> via your browser.
 Please replace your username with yours.
 
 image:images/ks-myjbossapp.png[image]
