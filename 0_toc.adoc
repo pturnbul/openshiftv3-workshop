@@ -30,6 +30,6 @@ Lab Exercises Table of Contents
 
 # Lab Information
 
-OpenShift Console - https://ocpmaster.gsic-rh-poc.net:8443
-Domain Suffix - ocp.gsic-rh-poc.net
-MAVEN_MIRROR_URL - http://nexus.nexus:8081/content/groups/public
+* OpenShift Console - https://ocpmaster.gsic-rh-poc.net:8443
+* Domain Suffix - ocp.gsic-rh-poc.net
+* MAVEN_MIRROR_URL - http://nexus.nexus:8081/content/groups/public
