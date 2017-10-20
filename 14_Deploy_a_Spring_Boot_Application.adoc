@@ -22,7 +22,7 @@ builder image was created using this Dockerfile.
 link:[https://github.com/codecentric/springboot-maven3-centos/blob/master/Dockerfile]
 
 ....
-$ oc new-app veermuchandi/spring-mvn-base~https://github.com/RedHatWorkshops/spring-sample-app --name=bootapp
+$ oc new-app veermuchandi/spring-mvn-base~https://github.com/RedHatWorkshops/spring-sample-app --name=bootapp --build-env=MAVEN_MIRROR_URL=<<PROVIDED BY INSTRUCTOR>>
 --> Found Docker image c3ddd9e (7 days old) from Docker Hub for "veermuchandi/spring-mvn-base"
 
     Spring Boot Maven 3
@@ -49,6 +49,11 @@ $ oc new-app veermuchandi/spring-mvn-base~https://github.com/RedHatWorkshops/spr
     Build scheduled, use 'oc logs -f bc/bootapp' to track its progress.
     Run 'oc status' to view your app.
 ....
+
+Note that Red Hat has recently released a JDK S2I image. An alternative and more supported way to create the application would be as per the new-app below, however to maintain compatibility with subsequent labs we use the method provided.
+```
+oc new-app redhat-openjdk18-openshift~https://github.com/RedHatWorkshops/spring-sample-app --name=bootapp --build-env=MAVEN_MIRROR_URL=<<PROVIDED BY INSTRUCTOR>>
+```
 
 Expose Service to create a route
 
