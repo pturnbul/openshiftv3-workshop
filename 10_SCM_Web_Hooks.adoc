@@ -26,7 +26,7 @@ $ oc new-project scm-web-hooks-UserName --display-name="Test WebHooks"
 
 *Step 2: Create new application*
 
-* If you are using a lab hosted in the public cloud, we will fork the repository from the previous lab which was here https://github.com/RedHatWorkshops/bluegreen. For OCP instances which cannot be accessed on the internet, simply use the repo from the previous lab in the command below.
+* We will fork the repository from the previous lab which was here https://github.com/RedHatWorkshops/bluegreen.
 
 *Remember* to substitute the UserName.
 
@@ -108,7 +108,7 @@ scm-web-hooks   172.30.71.191   <none>        8080/TCP   4m
 *Remember* to substitute the UserName.
 
 ....
-$ oc expose service scm-web-hooks --hostname=scm-web-hooks.UserName.apps.osecloud.com
+$ oc expose service scm-web-hooks --hostname=scm-web-hooks.UserName.<<DOMAIN_SUFFIX>>
 NAME            HOST/PORT                                  PATH      SERVICE         LABELS              TLS TERMINATION
 scm-web-hooks   scm-web-hooks.UserName.apps.osecloud.com             scm-web-hooks   app=scm-web-hooks   
 ....
@@ -119,7 +119,7 @@ scm-web-hooks   scm-web-hooks.UserName.apps.osecloud.com             scm-web-hoo
 `scm-web-hooks.UserName.apps.osecloud.com` and paste it in your browser.
 * You should see:
 
-image:images/green_deployment.png[image]
+image:images/blue_deployment.png[image]
 
 [[part-ii]]
 Part II
@@ -151,6 +151,8 @@ image:images/github_show_url.png[image]
 
 *Step 2: Configure GitHub repository Web Hook*
 
+Note if you are on an internal OpenShift instance which cannot be accessed by a webhook from github, simply review the instructions but there is no need to save the webhook.
+
 * Login to your GitHub account.
 * Navigate to the forked repository you used to create the application.
 * Click on Settings.
@@ -166,11 +168,18 @@ image:images/github_add_webhook.jpg[image]
 
 *Step 3: Redeploy the application*
 
-* Edit in your GitHub account the `image.php` file.
-* One of the lines in line 9 or 10 should be commented out. Make a
-change so that the line that was previously commented out becomes active
-and pound the other one.
+* Edit in your GitHub account the `index.php` file. 
+* On line 6, change the line:
+```
+$deployment = getenv("COLOR");
+```
+to
+```
+$deployment = 'green';
+```
 * Commit the file.
+
+For internal users who are using an OpenShift not connected to the internet, you will have to simulate the webhook by manually triggering a build. Go to the Builds menu and select Builds. Click on the scm-web-hooks build and press the build button on the right hand side of the screen.
 
 *Step 4: Monitor new deployment process*
 

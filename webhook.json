@@ -1,5 +1,5 @@
 {
-   "after":"52f1db3a9e27be48153f39a9225fd9ed8deb5975",
+   "after":"4c160c7457163205ea4010d7ea8c0f870fa6b1cd",
    "before":"663d33960c9b027585a30547353ac9063366e879",
    "commits":[
       {
@@ -57,7 +57,7 @@
          "madame-bovary.txt"
       ],
       "timestamp":"2013-03-12T08:14:29-07:00",
-      "url":"https://github.com/RedHatWorkshops/bluegreen/commit/52f1db3a9e27be48153f39a9225fd9ed8deb5975"
+      "url":"https://github.com/gnunn1/bluegreen/commit/4c160c7457163205ea4010d7ea8c0f870fa6b1cd"
    },
    "pusher":{
       "name":"none"
