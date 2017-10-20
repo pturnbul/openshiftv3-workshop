@@ -35,7 +35,7 @@ $ cd nodejs-hello
 Now let us create an application using this code.
 
 ....
-$ oc new-app .
+$ oc new-app . --build-env=HTTP_PROXY=http://10.115.90.145:8888
 --> Found image 448a51d (11 weeks old) in image stream "nodejs" in project "openshift" under tag "4" for "nodejs"
 
     Node.js 4
@@ -78,7 +78,7 @@ nodejs-hello   nodejs-hello-rsync-UserName.apps.devday.ocpcloud.com             
 ....
 
 ....
-$ $ curl nodejs-hello-rsync-UserName.apps.devday.ocpcloud.com
+$ $ curl nodejs-hello-rsync-UserName.<<DOMAIN_SUFFIX>>
 Welcome to OpenShift!! My HostName is: nodejs-hello-1-8qigc
 ....
 

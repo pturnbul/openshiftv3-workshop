@@ -7,6 +7,7 @@ Lab Exercises Table of Contents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Lab 0. link:0_Setting_up_client_tools.adoc[Setting up client tools]
+* Lab 0. link:0_Setting_up_git.adoc[Setting up git]
 * Lab 1. link:1_Create_App_From_a_Docker_Image.adoc[Creating an application from an existing Docker Image using CLI]
 * Lab 2. link:2_Create_App_Using_Docker_Build.adoc[Create an application using Docker Build Strategy using CLI]
 * Lab 3. link:3_Using_Web_Console.adoc[Using Web Console]
@@ -19,8 +20,7 @@ Lab Exercises Table of Contents
 * Lab 10. link:10_SCM_Web_Hooks.adoc[SCM - Web Hooks]
 * Lab 11. link:11_Rollback_Applications.adoc[Rollback Applications]
 * Lab 12. link:12_Code_Promotion_Across_Environments.adoc[Code Promotion Across Environments]
-* Lab 13. link:18_Changing_code_on_the_fly.adoc[Changing code on the fly]
-* Lab 14. link:19_Creating_a_Pipeline.adoc[Creating a CI/CD Pipeline]
+* Lab 13. link:19_Creating_a_Pipeline.adoc[Creating a CI/CD Pipeline]
 
 Optional Labs
 
