@@ -22,7 +22,7 @@ builder image was created using this Dockerfile.
 link:[https://github.com/codecentric/springboot-maven3-centos/blob/master/Dockerfile]
 
 ....
-$ oc new-app veermuchandi/spring-mvn-base~https://github.com/RedHatWorkshops/spring-sample-app --name=bootapp --build-env=MAVEN_MIRROR_URL=<<PROVIDED BY INSTRUCTOR>>
+$ oc new-app veermuchandi/spring-mvn-base~https://github.com/RedHatWorkshops/spring-sample-app --name=bootapp --build-env="MVN_ARGS=-Dhttp.proxyHost=10.115.90.145 -Dhttp.proxyPort=8888 -Dhttps.proxyHost=10.115.90.145 -Dhttps.proxyPort=8888"
 --> Found Docker image c3ddd9e (7 days old) from Docker Hub for "veermuchandi/spring-mvn-base"
 
     Spring Boot Maven 3
