@@ -7,7 +7,6 @@ Lab Exercises Table of Contents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Lab 0. link:0_Setting_up_client_tools.adoc[Setting up client tools]
-* Lab 0. link:0_Setting_up_git.adoc[Setting up git]
 * Lab 1. link:1_Create_App_From_a_Docker_Image.adoc[Creating an application from an existing Docker Image using CLI]
 * Lab 2. link:2_Create_App_Using_Docker_Build.adoc[Create an application using Docker Build Strategy using CLI]
 * Lab 3. link:3_Using_Web_Console.adoc[Using Web Console]
