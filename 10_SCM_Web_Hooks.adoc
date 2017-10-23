@@ -179,8 +179,6 @@ $deployment = 'green';
 ```
 * Commit the file.
 
-For internal users who are using an OpenShift not connected to the internet, you will have to simulate the webhook by manually triggering a build. Go to the Builds menu and select Builds. Click on the scm-web-hooks build and press the build button on the right hand side of the screen.
-
 *Step 4: Monitor new deployment process*
 
 * After saving/committing the `image.php` file with the small change,
