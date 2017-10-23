@@ -168,7 +168,7 @@ image:images/github_add_webhook.jpg[image]
 
 *Step 3: Redeploy the application*
 
-* Edit in your GitHub account the `index.php` file. 
+* Edit in your GitHub account the `image.php` file. 
 * On line 6, change the line:
 ```
 $deployment = getenv("COLOR");
