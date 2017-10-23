@@ -32,4 +32,4 @@ Lab Exercises Table of Contents
 
 * OpenShift Console - https://ocpmaster.gsic-rh-poc.net:8443
 * Domain Suffix - ocp.gsic-rh-poc.net
-* MAVEN_MIRROR_URL - http://nexus.nexus:8081/content/groups/public
+* MAVEN_MIRROR_URL - http://nexus-nexus.ocp.gsic-rh-poc.net/content/groups/public/
