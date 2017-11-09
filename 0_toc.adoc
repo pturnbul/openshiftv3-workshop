@@ -7,15 +7,15 @@ Lab Exercises Table of Contents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Lab 0. link:0_Setting_up_client_tools.adoc[Setting up client tools]
-* Lab 1. link:1_Create_App_From_a_Docker_Image.adoc[Creating an application from an existing Docker Image using CLI]
-* Lab 2. link:3_Using_Web_Console.adoc[Using Web Console]
-* Lab 3. link:5_Using_templates.adoc[Creating an application with frontend and backend database using templates]
-* Lab 4. link:6_Scale_up_and_Scale_down_the_application_instances.adoc[Scale Up Scale Down and Idle the application instances]
-* Lab 5. link:9_Blue_Green_Deployments.adoc[Blue-Green Deployments]
+* Lab 1. link:2_Create_App_Using_Docker_Build.adoc[Create an application using Docker Build Strategy using CLI]
+* Lab 2. link:1_Create_App_From_a_Docker_Image.adoc[Creating an application from an existing Docker Image using CLI]
+* Lab 3. link:3_Using_Web_Console.adoc[Using Web Console]
+* Lab 4. link:5_Using_templates.adoc[Creating an application with frontend and backend database using templates]
+* Lab 5. link:6_Scale_up_and_Scale_down_the_application_instances.adoc[Scale Up Scale Down and Idle the application instances]
 
 ### Optional Labs
 
-* Lab 1. link:2_Create_App_Using_Docker_Build.adoc[Create an application using Docker Build Strategy using CLI]
+* Lab 1. link:9_Blue_Green_Deployments.adoc[Blue-Green Deployments]
 * Lab 2. link:4_Creating_an_application_using_JBoss_EAP_builder_image.adoc[Creating an application using JBoss EAP builder image]
 * Lab 3. link:7_Binary_Deployment_of_a_war_file.adoc[Binary deployment of a war file]
 
